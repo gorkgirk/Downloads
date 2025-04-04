@@ -23,4 +23,15 @@ screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("THIS IS NOT AI")
 clock = pygame.time.Clock()  # Create a clock object to manage frame rate.
 
+class Player(pygame.sprite.Sprite):
+    def __init__(self):
+        super().__init__()
+        # Create a circular player character using a transparent surface and draw a red circle on it.
+        self.image = pygame.Surface((60, 60), pygame.SRCALPHA)
+        pygame.draw.circle(self.image, RED, (30, 30), 30)  
+        self.rect = self.image.get_rect(center=(100, HEIGHT - 100))  
+        self.velocity = 0  # Initialize vertical velocity to zero.
+        self.on_ground = True  # Boolean flag to check if the player is on the ground.
+
+
   
