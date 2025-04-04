@@ -87,4 +87,12 @@ score = 0
 obstacle_timer = pygame.USEREVENT + 1
 pygame.time.set_timer(obstacle_timer, 1500)
 
+def display_score():
+    # Calculate and display the current score based on elapsed time since gameplay started.
+    current_time = (pygame.time.get_ticks() - start_time) // 1000
+    score_surf = pygame.font.Font(None, 50).render(f"Score: {current_time}", True, WHITE)
+    score_rect = score_surf.get_rect(center=(WIDTH//2, 50))
+    screen.blit(score_surf, score_rect)
+    return current_time
+
   
