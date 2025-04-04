@@ -57,4 +57,8 @@ class Obstacle(pygame.sprite.Sprite):
         self.width = random.randint(30, 70)
         self.height = random.randint(20, 60)
 
+# Create a rectangular obstacle with a green fill color.
+        self.image = pygame.Surface((self.width, self.height))
+        self.image.fill(GREEN)
+
   
