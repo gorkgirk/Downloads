@@ -38,5 +38,11 @@ def update(self):
         self.velocity += GRAVITY
         self.rect.y += self.velocity
 
+# Check if the player has hit the ground; if so, stop falling and reset velocity.
+        if self.rect.bottom >= HEIGHT - 50:
+            self.rect.bottom = HEIGHT - 50
+            self.on_ground = True
+            self.velocity = 0
+
 
   
