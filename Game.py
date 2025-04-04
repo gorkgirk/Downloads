@@ -110,4 +110,6 @@ while running:
                 game_active = True
                 start_time = pygame.time.get_ticks()
 
+screen.fill(VIOLET)
+
   
