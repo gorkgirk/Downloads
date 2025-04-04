@@ -72,4 +72,10 @@ class Obstacle(pygame.sprite.Sprite):
         if self.rect.right < 0:
             self.kill()
 
+# Initialize player and obstacle groups for managing sprites in the game.
+player = Player()
+obstacle_group = pygame.sprite.Group()
+all_sprites = pygame.sprite.Group()
+all_sprites.add(player)
+
   
