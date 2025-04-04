@@ -61,4 +61,9 @@ class Obstacle(pygame.sprite.Sprite):
         self.image = pygame.Surface((self.width, self.height))
         self.image.fill(GREEN)
 
+ # Position obstacles at the right edge of the screen and align them with the ground level.
+        self.rect = self.image.get_rect(
+            midleft=(WIDTH, HEIGHT - self.height - 50)
+        )
+
   
