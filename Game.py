@@ -95,4 +95,19 @@ def display_score():
     screen.blit(score_surf, score_rect)
     return current_time
 
+# Main game loop that handles events, updates game states, and draws elements on screen.
+running = True
+while running:
+    for event in pygame.event.get():
+        if event.type == QUIT:
+            running = False
+        if game_active:
+            if event.type == obstacle_timer:
+                obstacle_group.add(Obstacle())
+                all_sprites.add(obstacle_group)
+        else:
+            if event.type == KEYDOWN and event.key == K_SPACE:
+                game_active = True
+                start_time = pygame.time.get_ticks()
+
   
