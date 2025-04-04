@@ -66,4 +66,10 @@ class Obstacle(pygame.sprite.Sprite):
             midleft=(WIDTH, HEIGHT - self.height - 50)
         )
 
+ def update(self):
+        # Move obstacles leftward across the screen at a constant speed; remove them when off-screen.
+        self.rect.x -= OBSTACLE_SPEED
+        if self.rect.right < 0:
+            self.kill()
+
   
