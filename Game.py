@@ -83,4 +83,8 @@ game_active = False
 start_time = 0
 score = 0
 
+# Set up a timer event to spawn obstacles periodically during gameplay.
+obstacle_timer = pygame.USEREVENT + 1
+pygame.time.set_timer(obstacle_timer, 1500)
+
   
