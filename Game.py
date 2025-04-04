@@ -50,4 +50,11 @@ def jump(self):
             self.velocity = JUMP_FORCE
             self.on_ground = False
 
+class Obstacle(pygame.sprite.Sprite):
+    def __init__(self):
+        super().__init__()
+        # Generate random dimensions for obstacles to add variety to gameplay.
+        self.width = random.randint(30, 70)
+        self.height = random.randint(20, 60)
+
   
