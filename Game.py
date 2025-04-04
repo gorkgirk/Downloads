@@ -33,5 +33,10 @@ class Player(pygame.sprite.Sprite):
         self.velocity = 0  # Initialize vertical velocity to zero.
         self.on_ground = True  # Boolean flag to check if the player is on the ground.
 
+def update(self):
+        # Apply gravity to simulate falling and update the player's vertical position.
+        self.velocity += GRAVITY
+        self.rect.y += self.velocity
+
 
   
