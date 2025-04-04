@@ -44,5 +44,10 @@ def update(self):
             self.on_ground = True
             self.velocity = 0
 
+def jump(self):
+        # Allow jumping only when the player is on the ground; apply upward force to start jump.
+        if self.on_ground:
+            self.velocity = JUMP_FORCE
+            self.on_ground = False
 
   
