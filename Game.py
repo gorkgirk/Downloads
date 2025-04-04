@@ -78,4 +78,9 @@ obstacle_group = pygame.sprite.Group()
 all_sprites = pygame.sprite.Group()
 all_sprites.add(player)
 
+# Track game states like whether gameplay is active or paused and initialize score variables.
+game_active = False
+start_time = 0
+score = 0
+
   
