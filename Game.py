@@ -18,4 +18,9 @@ VIOLET = (125, 0, 255)
 BLUE = (0, 0, 255)  
 RED = (255, 0, 0)  
 
+# Create the game window with specified dimensions and set its title to "THIS IS NOT AI".
+screen = pygame.display.set_mode((WIDTH, HEIGHT))
+pygame.display.set_caption("THIS IS NOT AI")
+clock = pygame.time.Clock()  # Create a clock object to manage frame rate.
+
   
