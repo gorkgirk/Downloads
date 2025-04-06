@@ -116,4 +116,6 @@ if game_active:
         # Draw a white rectangle at the bottom of the screen to represent the ground surface.
         pygame.draw.rect(screen, WHITE, (0, HEIGHT-50, WIDTH, 50))
 
+
+
   
