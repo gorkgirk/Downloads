@@ -137,4 +137,8 @@ if game_active:
         # Display menu screen with title text and instructions when gameplay is paused or inactive.
         screen.fill(VIOLET)
 
+title_surf = pygame.font.Font(None, 80).render("THIS IS NOT AI", True, WHITE)
+        title_rect = title_surf.get_rect(center=(WIDTH//2, HEIGHT//2 - 50))
+        screen.blit(title_surf, title_rect)
+
   
