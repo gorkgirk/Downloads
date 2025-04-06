@@ -124,5 +124,9 @@ if game_active:
 # Update all sprites in the game based on their individual logic (e.g., movement).
         all_sprites.update()
 
+ # Detect collisions between player and obstacles; end gameplay if a collision occurs.
+        if pygame.sprite.spritecollide(player, obstacle_group, False):
+            game_active = False
+            obstacle_group.empty()
 
   
