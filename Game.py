@@ -145,4 +145,8 @@ score_surf = pygame.font.Font(None, 40).render(f"Last Score: {score}", True, WHI
         score_rect = score_surf.get_rect(center=(WIDTH//2, HEIGHT//2 + 50))
         screen.blit(score_surf, score_rect)
 
+instr_surf = pygame.font.Font(None, 30).render("Press SPACE to start", True, WHITE)
+        instr_rect = instr_surf.get_rect(center=(WIDTH//2, HEIGHT//2 + 100))
+        screen.blit(instr_surf, instr_rect)
+
   
