@@ -121,5 +121,8 @@ if game_active:
         if keys[K_SPACE]:
             player.jump()
 
+# Update all sprites in the game based on their individual logic (e.g., movement).
+        all_sprites.update()
+
 
   
