@@ -133,4 +133,8 @@ if game_active:
         all_sprites.draw(screen)
         score = display_score()
 
+ else:
+        # Display menu screen with title text and instructions when gameplay is paused or inactive.
+        screen.fill(VIOLET)
+
   
