@@ -116,6 +116,10 @@ if game_active:
         # Draw a white rectangle at the bottom of the screen to represent the ground surface.
         pygame.draw.rect(screen, WHITE, (0, HEIGHT-50, WIDTH, 50))
 
+# Handle player input for jumping when SPACE key is pressed during active gameplay.
+        keys = pygame.key.get_pressed()
+        if keys[K_SPACE]:
+            player.jump()
 
 
   
