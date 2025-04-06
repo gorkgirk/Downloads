@@ -129,4 +129,8 @@ if game_active:
             game_active = False
             obstacle_group.empty()
 
+# Draw all active sprites on screen and update score display at the top of the window.
+        all_sprites.draw(screen)
+        score = display_score()
+
   
