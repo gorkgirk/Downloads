@@ -149,4 +149,8 @@ instr_surf = pygame.font.Font(None, 30).render("Press SPACE to start", True, WHI
         instr_rect = instr_surf.get_rect(center=(WIDTH//2, HEIGHT//2 + 100))
         screen.blit(instr_surf, instr_rect)
 
+# Reset player's position and velocity when returning to menu after gameplay ends.
+        player.rect.center = (100, HEIGHT - 100)
+        player.velocity = 0
+
   
