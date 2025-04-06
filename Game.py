@@ -156,6 +156,8 @@ instr_surf = pygame.font.Font(None, 30).render("Press SPACE to start", True, WHI
 pygame.display.update()  
     clock.tick(FPS) 
 
+pygame.quit()  
+
 
 
 
