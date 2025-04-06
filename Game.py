@@ -141,4 +141,8 @@ title_surf = pygame.font.Font(None, 80).render("THIS IS NOT AI", True, WHITE)
         title_rect = title_surf.get_rect(center=(WIDTH//2, HEIGHT//2 - 50))
         screen.blit(title_surf, title_rect)
 
+score_surf = pygame.font.Font(None, 40).render(f"Last Score: {score}", True, WHITE)
+        score_rect = score_surf.get_rect(center=(WIDTH//2, HEIGHT//2 + 50))
+        screen.blit(score_surf, score_rect)
+
   
